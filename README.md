@@ -33,16 +33,22 @@ cd <your-repo>
 
 ### Step 2 — Create and Activate an Environment
 Option A — Using Conda 
+```bash
 conda env create -f environment.yml
 conda activate btc-forecasting
+```
 
 Option B — Using pip + virtual environment
+```bash
 python3 -m venv venv
 source venv/bin/activate     # Mac/Linux
 venv\Scripts\activate        # Windows
+```
 
 ### Step 3 — Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
 ---
 
