@@ -31,7 +31,9 @@ git clone https://github.com/Yang-1007/time_series_bitcoin_price_prediction_RNN_
 cd <your-repo>
 ```
 
-### Step 2 — Create and Activate an Environment
+### Step 2 — Create and Activate an Environment (Optional)
+If you don't have tne env built or want to create a new env to use:
+
 Option A — Using Conda 
 ```bash
 conda env create -f environment.yml
