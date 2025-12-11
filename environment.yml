@@ -1,0 +1,17 @@
+name: btc-forecasting
+channels:
+  - defaults
+  - pytorch
+dependencies:
+  - python=3.10
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - tqdm
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pip
+  - pip:
+      - jupyter
