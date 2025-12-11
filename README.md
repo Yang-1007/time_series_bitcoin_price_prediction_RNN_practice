@@ -54,15 +54,14 @@ pip install -r requirements.txt
 
 ## How to Run the Demo
 A simple demonstration script is provided to verify that the environment and pretrained model work correctly.
-Run: python demo.py
+```bash
+python demo.py
+```
+
 This script will:
-
-Load a pretrained model
-
-Load a sample 30-day Bitcoin window from demo/sample.npy
-
-Predict the next 7 days
-
-Save a forecast plot into results/prediction_plot.png
+1. Load a pretrained model
+2. Load a sample 30-day Bitcoin window from demo/sample.npy
+3. Predict the next 7 days
+4. Save a forecast plot into results/prediction_plot.png
 
 ---
