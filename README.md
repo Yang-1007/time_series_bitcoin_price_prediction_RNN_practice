@@ -22,3 +22,37 @@ The objectives are:
 The dataset used is Bitcoin historical OHLCV price data from **Kaggle (2012–2024)**.
 
 ---
+
+## Setup Instructions (Required Section)
+
+### Step 1 — Clone the Repository
+
+### Step 2 — Create and Activate an Environment
+Option A — Using Conda (Recommended)
+conda env create -f environment.yml
+conda activate btc-forecasting
+
+Option B — Using pip + virtual environment
+python3 -m venv venv
+source venv/bin/activate     # Mac/Linux
+venv\Scripts\activate        # Windows
+
+### Step 3 — Install Dependencies
+pip install -r requirements.txt
+
+---
+
+## How to Run the Demo
+A simple demonstration script is provided to verify that the environment and pretrained model work correctly.
+Run: python demo.py
+This script will:
+
+Load a pretrained model
+
+Load a sample 30-day Bitcoin window from demo/sample.npy
+
+Predict the next 7 days
+
+Save a forecast plot into results/prediction_plot.png
+
+---
