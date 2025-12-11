@@ -10,7 +10,7 @@ The project compares these architectures on both **single-feature** (Close price
 
 ---
 
-## 🚀 Project Overview
+## Project Overview
 This project was developed for the final course project in Deep Learning.  
 The objectives are:
 
