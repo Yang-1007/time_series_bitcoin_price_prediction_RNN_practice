@@ -23,12 +23,16 @@ The dataset used is Bitcoin historical OHLCV price data from **Kaggle (https://w
 
 ---
 
-## Setup Instructions (Required Section)
+## Setup Instructions
 
 ### Step 1 — Clone the Repository
+```bash
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+```
 
 ### Step 2 — Create and Activate an Environment
-Option A — Using Conda (Recommended)
+Option A — Using Conda 
 conda env create -f environment.yml
 conda activate btc-forecasting
 
