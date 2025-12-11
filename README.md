@@ -19,7 +19,7 @@ The objectives are:
 - Understand the impact of architectural choices on short-horizon prediction  
 - Train models using consistent settings for fair comparison  
 
-The dataset used is Bitcoin historical OHLCV price data from **Kaggle (2012–2024)**.
+The dataset used is Bitcoin historical OHLCV price data from **Kaggle (https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data)**.
 
 ---
 
