@@ -27,7 +27,7 @@ The dataset used is Bitcoin historical OHLCV price data from **Kaggle (https://w
 
 ### Step 1 — Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
+git clone https://github.com/Yang-1007/time_series_bitcoin_price_prediction_RNN_practice.git
 cd <your-repo>
 ```
 
