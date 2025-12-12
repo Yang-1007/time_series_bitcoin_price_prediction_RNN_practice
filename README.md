@@ -98,9 +98,9 @@ This demo script will:
 
 After running the demo, you should see:
 
-Printed predicted values for the next 7 days in the terminal
+- Printed predicted values for the next 7 days in the terminal
 
-A saved plot comparing predicted prices over the forecast horizon:
+- A saved plot comparing predicted prices over the forecast horizon:
 
 ---
 
