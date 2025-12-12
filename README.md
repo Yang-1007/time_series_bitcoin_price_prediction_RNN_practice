@@ -138,4 +138,14 @@ All training settings are defined in src/config.py.
 Then run:
   `python -m src.main`
 
+---
 
+## Jupyter Notebook Files
+
+For reference and transparency, the original development notebooks used during the project are also included.
+
+- The folder ipynb_files/ contains:
+
+    `final_project_single_feature_prediction.ipynb`
+
+    `final_project_multi_feature_prediction.ipynb`
