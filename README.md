@@ -33,16 +33,18 @@ https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data.
 ├── README.md
 ├── requirements.txt
 ├── environment.yml
-├── checkpoints/        # Pretrained model weights
+├── checkpoints/        # Placeholder for saved model weights
 ├── demo/               # Demo script and sample input
 │   ├── demo.py
 │   └── sample.npy
-├── results/            # Generated plots
+├── results/            # Placeholder for generated results/plots
+├── ipynb_files/        # original notebooks
 └── src/
     ├── main.py         # Training and evaluation entry point
     ├── model.py        # Model definitions
     ├── utils.py        # Data processing and training utilities
     └── config.py       # Hyperparameters and experiment settings
+
 ```
 ---
 
