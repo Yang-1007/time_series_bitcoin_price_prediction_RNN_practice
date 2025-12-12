@@ -67,3 +67,22 @@ This script will:
 4. Save a forecast plot into results/prediction_plot.png
 
 ---
+
+## Pre-trained Models
+
+The pretrained model weights are available at:
+
+🔗 Google Drive link: [https://drive.google.com/xxxxxx](https://drive.google.com/drive/u/0/folders/1bW-P4a6qlVLmGqeyJh-wcdsnwQA2UE6L)
+
+Included models:
+- baseline_lstm_single.pth
+- baseline_lstm_multi.pth
+
+- seq2seq_lstm_single.pth
+- seq2seq_lstm_multi.pth
+
+- transformer_single.pth
+- transformer_posenc_multi.pth
+
+After downloading, place the files into the `checkpoints/` directory.
+
