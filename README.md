@@ -1,12 +1,14 @@
 # Multistep Time-Series Forecasting for Bitcoin Prices
 This project explores short-term financial forecasting using deep learning sequence models.  
-Given the previous 30 days of Bitcoin price data, the goal is to predict the next 7 days using three architectures:
+Given the previous **30 days** of Bitcoin price data, the goal is to predict the next **7 days** using three architectures:
 
 1. **Baseline LSTM**
 2. **Seq2Seq Encoder–Decoder**
 3. **Transformer (Encoder-only) with/without Positional Encoding**
 
-The project compares these architectures on both **single-feature** (Close price) and **multivariate** (OHLCV) prediction tasks.
+The models are evaluated on both:
+- **Single-feature forecasting** (Close price only)
+- **Multivariate forecasting** (OHLCV features)
 
 ---
 
@@ -19,8 +21,29 @@ The objectives are:
 - Understand the impact of architectural choices on short-horizon prediction  
 - Train models using consistent settings for fair comparison  
 
-The dataset used is Bitcoin historical OHLCV price data from **Kaggle (https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data)**.
+The dataset used is **Bitcoin historical OHLCV price data** from Kaggle:
+https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data.
 
+---
+
+## Repository Structure
+
+```text
+.
+├── README.md
+├── requirements.txt
+├── environment.yml
+├── checkpoints/        # Pretrained model weights
+├── demo/               # Demo script and sample input
+│   ├── demo.py
+│   └── sample.npy
+├── results/            # Generated plots
+└── src/
+    ├── main.py         # Training and evaluation entry point
+    ├── model.py        # Model definitions
+    ├── utils.py        # Data processing and training utilities
+    └── config.py       # Hyperparameters and experiment settings
+```
 ---
 
 ## Setup Instructions
@@ -28,11 +51,11 @@ The dataset used is Bitcoin historical OHLCV price data from **Kaggle (https://w
 ### Step 1 — Clone the Repository
 ```bash
 git clone https://github.com/Yang-1007/time_series_bitcoin_price_prediction_RNN_practice.git
-cd <your-repo>
+cd <your-cloned-repo> (e.g. time_series_bitcoin_price_prediction_RNN_practice)
 ```
 
 ### Step 2 — Create and Activate an Environment (Optional)
-If you don't have tne env built or want to create a new env to use:
+If you do not already have an environment set up or you want to create a new one.
 
 Option A — Using Conda 
 ```bash
@@ -43,7 +66,7 @@ conda activate btc-forecasting
 Option B — Using pip + virtual environment
 ```bash
 python3 -m venv venv
-source venv/bin/activate     # Mac/Linux
+source venv/bin/activate     # Mac / Linux
 venv\Scripts\activate        # Windows
 ```
 
@@ -56,11 +79,14 @@ pip install -r requirements.txt
 
 ## How to Run the Demo
 A simple demonstration script is provided to verify that the environment and pretrained model work correctly.
+Before running the demo script, download the pretrained models(link below) and place them into the `checkpoints/` directory. 
+
+Run the demo from the project root:
 ```bash
-python demo.py
+python demo/demo.py
 ```
 
-This script will:
+This demo script will:
 1. Load a pretrained model
 2. Load a sample 30-day Bitcoin window from demo/sample.npy
 3. Predict the next 7 days
@@ -68,13 +94,25 @@ This script will:
 
 ---
 
+## Expected Output
+
+After running the demo, you should see:
+
+Printed predicted values for the next 7 days in the terminal
+
+A saved plot comparing predicted prices over the forecast horizon:
+
+---
+
 ## Pre-trained Models
 
 The pretrained model weights are available at:
 
-🔗 Google Drive link: [[https://drive.google.com/xxxxxx](https://drive.google.com/drive/u/0/folders/1bW-P4a6qlVLmGqeyJh-wcdsnwQA2UE6L)]
+🔗 Google Drive link:
+[[https://drive.google.com/xxxxxx](https://drive.google.com/drive/u/0/folders/1bW-P4a6qlVLmGqeyJh-wcdsnwQA2UE6L)]
 
 Included models:
+```
 - baseline_lstm_single.pth
 - baseline_lstm_multi.pth
 
@@ -83,14 +121,20 @@ Included models:
 
 - transformer_single.pth
 - transformer_posenc_multi.pth
-
-After downloading, place the files into the `checkpoints/` directory.
+```
 
 ---
-To train single-feature models:
-- set FEATURE_MODE="single"
 
-To train multi-feature models:
-- set FEATURE_MODE="multi"
+## Training Your Own Models
+
+All training settings are defined in src/config.py.
+- To train single-feature models:
+  `FEATURE_MODE = "single"`
+
+- To train multivariate (OHLCV) models:
+  `FEATURE_MODE = "multi"`
+
+Then run:
+  `python -m src.main`
 
 
