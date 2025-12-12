@@ -101,7 +101,8 @@ After running the demo, you should see:
 - Printed predicted values for the next 7 days in the terminal
 
 - A saved plot comparing predicted prices over the forecast horizon:
-
+    `results/prediction_plot.png`
+  
 ---
 
 ## Pre-trained Models
