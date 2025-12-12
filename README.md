@@ -72,7 +72,7 @@ This script will:
 
 The pretrained model weights are available at:
 
-🔗 Google Drive link: [https://drive.google.com/xxxxxx](https://drive.google.com/drive/u/0/folders/1bW-P4a6qlVLmGqeyJh-wcdsnwQA2UE6L)
+🔗 Google Drive link: [[https://drive.google.com/xxxxxx](https://drive.google.com/drive/u/0/folders/1bW-P4a6qlVLmGqeyJh-wcdsnwQA2UE6L)]
 
 Included models:
 - baseline_lstm_single.pth
