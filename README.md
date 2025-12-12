@@ -86,3 +86,11 @@ Included models:
 
 After downloading, place the files into the `checkpoints/` directory.
 
+---
+To train single-feature models:
+- set FEATURE_MODE="single"
+
+To train multi-feature models:
+- set FEATURE_MODE="multi"
+
+
