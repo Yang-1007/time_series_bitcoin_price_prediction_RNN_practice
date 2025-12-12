@@ -78,7 +78,7 @@ pip install -r requirements.txt
 ---
 
 ## How to Run the Demo
-A simple demonstration script is provided to verify that the environment and pretrained model work correctly.
+A minimal demo script is provided that loads a pretrained model, runs inference on a sample input, and saves the resulting forecast plot.
 Before running the demo script, download the pretrained models(link below) and place them into the `checkpoints/` directory. 
 
 Run the demo from the project root:
