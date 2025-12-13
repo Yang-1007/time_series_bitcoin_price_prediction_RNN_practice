@@ -162,7 +162,9 @@ All training settings are defined in src/config.py.
   `FEATURE_MODE = "multi"`
 
 Then run:
-  `python -m src.main`
+```
+python -m src.main
+```
 
 ---
 
