@@ -63,13 +63,13 @@ git clone https://github.com/Yang-1007/time_series_bitcoin_price_prediction_RNN_
 cd <your-cloned-repo> (e.g. time_series_bitcoin_price_prediction_RNN_practice)
 ```
 
-### Step 2 — Create and Activate an Environment (Optional)
+### Step 2 — Create and Activate an Environment 
 If you do not already have an environment set up or you want to create a new one.
 
 Option A — Using Conda 
 ```bash
 conda env create -f environment.yml
-conda activate btc-forecasting
+conda activate btc_forecasting_env
 ```
 
 Option B — Using pip + virtual environment
@@ -93,7 +93,10 @@ pip install torch==2.2.2 --index-url https://download.pytorch.org/whl/cpu
 ```
 Then re-run the demo or training script.
 
-### Step 3 — Install Dependencies
+### Step 3 — Install Dependencies (Optional)
+Note: `requirements.txt` is provided as a fallback for pip users or Windows users
+who encounter Conda-related PyTorch issues.
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -102,7 +105,7 @@ pip install -r requirements.txt
 
 ## How to Run the Demo
 A minimal demo script is provided that loads a pretrained model, runs inference on a sample input, and saves the resulting forecast plot.
-Before running the demo script, download the pretrained models(link below) and place them into the `checkpoints/` directory. 
+Before running the demo script, download the pretrained models (link below) and place them into the `checkpoints/` directory. 
 
 Run the demo from the project root:
 ```bash
