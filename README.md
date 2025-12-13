@@ -50,6 +50,13 @@ https://www.kaggle.com/datasets/mczielinski/bitcoin-historical-data.
 
 ## Setup Instructions
 
+### Platform Notes (Important)
+
+- This project has been tested on **Windows**.
+- On **Windows**, I encountered PyTorch DLL loading issues when using Conda.
+  If this happens to you, please try use the **CPU-only PyTorch installation** as described below.
+- On **macOS and Linux**, the provided `environment.yml` should works out of the box.
+
 ### Step 1 — Clone the Repository
 ```bash
 git clone https://github.com/Yang-1007/time_series_bitcoin_price_prediction_RNN_practice.git
@@ -72,11 +79,23 @@ source venv/bin/activate     # Mac / Linux
 venv\Scripts\activate        # Windows
 ```
 
+#### Windows Users (If PyTorch Import Error Occurs)
+
+If you see an error related to `fbgemm.dll` or PyTorch failing to import:
+
+1. Remove existing PyTorch:
+```bash
+pip uninstall torch -y
+```
+2. Install CPU-only PyTorch via pip:
+```pip install torch==2.2.2 --index-url https://download.pytorch.org/whl/cpu```
+Then re-run the demo or training script.
+
 ### Step 3 — Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
-
+  
 ---
 
 ## How to Run the Demo
