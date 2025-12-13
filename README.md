@@ -88,7 +88,9 @@ If you see an error related to `fbgemm.dll` or PyTorch failing to import:
 pip uninstall torch -y
 ```
 2. Install CPU-only PyTorch via pip:
-```pip install torch==2.2.2 --index-url https://download.pytorch.org/whl/cpu```
+```
+pip install torch==2.2.2 --index-url https://download.pytorch.org/whl/cpu
+```
 Then re-run the demo or training script.
 
 ### Step 3 — Install Dependencies
