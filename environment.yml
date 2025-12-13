@@ -12,6 +12,3 @@ dependencies:
   - scikit-learn=1.7.1
   - pytorch=2.2.2
   - pip
-  - pip:
-      # If torch wasn't found as a conda package on some systems, pip will install it
-      - torch==2.2.2
